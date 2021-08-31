@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Logging
-if (process.env.NODE_ENV === "{working-mode}") {
+if (process.env.NODE_ENV === "{working-mode-of-server}") {
     app.use(morgan("dev"));
 }
 
